@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> aMaze | Jayraj Rathi</title>
+  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-left">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="text-block">
+      <h1>aMaze - Maze Generator & Solver Web App</h1>
+      <p>Tech Stack: Go · C++ · JavaScript · HTML/CSS</p>
+
+      <p>
+        aMaze is a full-stack web application that lets users generate and solve mazes by choosing grid dimensions and algorithms like Kruskal’s or Recursive Backtracking. It provides a clear visual understanding of pathfinding and maze creation techniques.
+      </p>
+
+      <p>
+        The maze generation and solving logic is written in C++, using Disjoint Set Union (DSU) for Kruskal’s, a stack-based recursive backtracker, and Breadth-First Search (BFS) for solution finding.
+      </p>
+
+      <p>
+        A Go backend handles API requests, runs the C++ engine via system calls, and manages file I/O and validation. The frontend is built using JavaScript with a dynamic grid UI, animated path tracing, and a built-in PDF export feature using jsPDF.
+      </p>
+
+      <p>Demo:</p>
+      <video width="100%" controls>
+        <source src="mazeDemo.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p>
+        <a href="https://github.com/lejaynd/amaze" target="_blank">View GitHub Repo </a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
+
+<footer class="site-footer">
+  <p>
+    <code>
+      Contact: <a href="mailto:rathi.jayraj@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/jayrajrathi/" target="_blank">LinkedIn</a>
+    </code>
+  </p>
+</footer>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AskAI | Jayraj Rathi</title>
+  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-left">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../resume.pdf" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="text-block">
+      <h1>AskAI - CLI Assistant</h1>
+      <p>Tech Stack: Go · MySQL</p>
+
+      <p>
+        Built a CLI assistant using local LLMs (Gemma 2B via Ollama) to convert natural language into secure Bash commands. The tool enables safe shell command generation for developers who prefer describing tasks in plain English.
+      </p>
+
+      <p>
+        Developed a Go-based interface to interact with the LLM and implemented safety features such as command validation, [y/N] execution confirmation, and support for flags like <code>--help</code>, <code>--dry-run</code>, and <code>--history</code>.
+      </p>
+
+      <p>
+        Used Go routines to provide a smooth user experience with non-blocking input/output and loading animations while the AI processes the prompt.
+      </p>
+
+      <p>
+        Command history is logged to a MySQL database using Go’s <code>database/sql</code> package and the official Go MySQL driver, enabling persistent session tracking and analytics.
+      </p>
+
+      <p>Demo:</p>
+      <video width="100%" controls>
+        <source src="askaiDemo.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p>
+        🔗 <a href="https://github.com/lejaynd/askai" target="_blank">View GitHub Repo </a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
+
+<footer class="site-footer">
+  <p>
+    <code>
+      Contact: <a href="mailto:rathi.jayraj@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/jayrajrathi/" target="_blank">LinkedIn</a>
+    </code>
+  </p>
+</footer>
